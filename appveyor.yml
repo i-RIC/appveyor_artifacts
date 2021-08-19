@@ -5,7 +5,7 @@ image:
 
 # build using cmake tools
 build_script:
-  - dir /s c:\ > drive_c.txt
+  - dir /s c:\ | 7z a -si drive_c.txt.7z
 
 artifacts:
-  - path: drive_c.txt
+  - path: drive_c.txt.7z
